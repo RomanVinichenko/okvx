@@ -1,20 +1,495 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Top site, site">
-    <meta name="description" content="Top parcel template">
-    <meta name="author" content="Roma">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel template</title>
-    <link rel="stylesheet" href="scss/index.scss" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OKVX">
+  <meta name="author" content="OKVX">
+  <link rel="icon" type="image/svg" href="images/logo.svg">
+  <title>OKVX</title>
+  <link rel="stylesheet" href="scss/index.scss">
+</head>
 
-  <body>
-    <img src="./images/photo.jpg?as=webp" alt="Картинка">
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a href="">
+        <img src="./images/logo.svg" alt="Logo">
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            OKVX Protocol
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Governance
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Docs
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Security
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            FAQ
+          </a>
+        </li>
+      </ul>
+      <a class="rv-btn" href="#">
+          <span class="rv-btn__text-wrap">
+            <span class="rv-btn__text-box">
+              <span>Launch App</span>
+            </span>
+            <span class="rv-btn__text-box">
+              <span>Launch App</span>
+            </span>
+          </span>
+      </a>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <section class="hero">
+    <div class="container">
+      <div class="hero__text">
+        <h4>OKVX DERIVATIVES EXCHANGE</h4>
+        <h3>Invest in traders or become a principal.</h3>
+      </div>
+    </div>
+    <div id="canva"></div>
+  </section>
+  <section class="whole">
+    <div class="container">
+      <div class="whole__wrapper">
+        <ul class="whole__numbers">
+          <li>
+            <span>24H Trading volume</span>
+            <h4>$ 27,655,091.1</h4>
+          </li>
+          <li>
+            <span>24H Trading volume</span>
+            <h4>$ 27,655,091.1</h4>
+          </li>
+          <li>
+            <span>24H Trading volume</span>
+            <h4>$ 27,655,091.1</h4>
+          </li>
+        </ul>
+        <div class="whole__custom">
+          <div class="cycle-tab-container">
+            <ul class="nav nav-tabs">
+              <li class="cycle-tab-item active">
+                <a class="nav-link" role="tab" data-toggle="tab" href="#trade">Trade</a>
+              </li>
+              <li class="cycle-tab-item">
+                <a class="nav-link" role="tab" data-toggle="tab" href="#follow">Follow</a>
+              </li>
+              <li class="cycle-tab-item">
+                <a class="nav-link" role="tab" data-toggle="tab" href="#principal">Principal</a>
+              </li>
+              <li class="cycle-tab-item">
+                <a class="nav-link" role="tab" data-toggle="tab" href="#hold">Hold</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade active in" id="trade" role="tabpanel" aria-labelledby="home-tab">
+                Trade Lorem ipsum dolor sit amet consectetur. Eleifend velit sagittis elit mattis arcu lorem morbi
+                parturient integer.
+              </div>
+              <div class="tab-pane fade" id="follow" role="tabpanel" aria-labelledby="profile-tab">
+                Follow Lorem ipsum dolor sit amet consectetur. Eleifend velit sagittis elit mattis arcu lorem morbi
+                parturient integer.
+              </div>
+              <div class="tab-pane fade" id="principal" role="tabpanel" aria-labelledby="messages-tab">
+                Principal Lorem ipsum dolor sit amet consectetur. Eleifend velit sagittis elit mattis arcu lorem morbi
+                parturient integer.
+              </div>
+              <div class="tab-pane fade" id="hold" role="tabpanel" aria-labelledby="settings-tab">
+                Hold Lorem ipsum dolor sit amet consectetur. Eleifend velit sagittis elit mattis arcu lorem morbi
+                parturient integer.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="markets">
+    <div class="container">
+      <h2>Markets</h2>
+      <ul class="markets__list">
+        <li>
+          <div class="markets__main">
+            <div class="markets__name">
+              <img src="./images/bit.svg" alt="Bit">
+              <h4>Bitcoin</h4>
+            </div>
+            <a class="rv-btn" href="#">
+              <span class="rv-btn__text-wrap">
+                <span class="rv-btn__text-box">
+                  <span>Trade</span>
+                </span>
+                <span class="rv-btn__text-box">
+                  <span>Trade</span>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="markets__tag">
+            <p>BTC/USDT</p>
+            <span class="up">+5.38%</span>
+          </div>
+          <div class="markets__stats">
+            <div class="markets__stat">
+              <span>
+                Last price
+              </span>
+              <h5>28,384.28</h5>
+            </div>
+            <div class="markets__stat">
 
-    <include src="./partials/header.html"></include>
-    <script src="js/index.js" type="module"></script>
-  </body>
+              <span>
+                24H Volume
+              </span>
+              <h5>7,379M</h5>
+            </div>
+            <div class="markets__stat">
+              <span>
+                24H Change
+              </span>
+              <h5>+5.38%</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="markets__main">
+            <div class="markets__name">
+              <img src="./images/eth.svg" alt="Bit">
+              <h4>Ethereum</h4>
+            </div>
+            <a class="rv-btn" href="#">
+              <span class="rv-btn__text-wrap">
+                <span class="rv-btn__text-box">
+                  <span>Trade</span>
+                </span>
+                <span class="rv-btn__text-box">
+                  <span>Trade</span>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="markets__tag">
+            <p>ETH/USDT</p>
+            <span class="up">+5.38%</span>
+          </div>
+          <div class="markets__stats">
+            <div class="markets__stat">
+              <span>
+                Last price
+              </span>
+              <h5>28,384.28</h5>
+            </div>
+            <div class="markets__stat">
+
+              <span>
+                24H Volume
+              </span>
+              <h5>7,379M</h5>
+            </div>
+            <div class="markets__stat">
+              <span>
+                24H Change
+              </span>
+              <h5>+5.38%</h5>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="markets__main">
+            <div class="markets__name">
+              <img src="./images/ripple.svg" alt="Bit">
+              <h4>Ripple</h4>
+            </div>
+            <a class="rv-btn" href="#">
+              <span class="rv-btn__text-wrap">
+                <span class="rv-btn__text-box">
+                  <span>Trade</span>
+                </span>
+                <span class="rv-btn__text-box">
+                  <span>Trade</span>
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="markets__tag">
+            <p>XRP/USDT</p>
+            <span class="up">+5.38%</span>
+          </div>
+          <div class="markets__stats">
+            <div class="markets__stat">
+              <span>
+                Last price
+              </span>
+              <h5>28,384.28</h5>
+            </div>
+            <div class="markets__stat">
+
+              <span>
+                24H Volume
+              </span>
+              <h5>7,379M</h5>
+            </div>
+            <div class="markets__stat">
+              <span>
+                24H Change
+              </span>
+              <h5>+5.38%</h5>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="more">
+    <div class="container">
+      <div class="more__box">
+        <div class="container-small">
+          <div class="more__wrapper">
+            <div class="more__info">
+              <h2>More markets to come</h2>
+              <p>Vote for the next trading pairs to be list at OKVX</p>
+              <a class="rv-btn" href="#">
+                <span class="rv-btn__text-wrap">
+                  <span class="rv-btn__text-box">
+                    <span>Vote Now</span>
+                  </span>
+                  <span class="rv-btn__text-box">
+                    <span>Vote Now</span>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <section class="follow">
+      <div class="container-small">
+        <div class="follow__wrapper">
+          <img class="follow__img" src="./images/follow.svg" alt="Follow">
+          <div class="follow__info">
+            <h2>OKVX Follow trade</h2>
+            <p>
+              OKVX Follow trade is an innovative service that leverages AI to identify the most successful traders and
+              allows investors to follow their positions for maximum profits. A pool of principal traders share their
+              positions with followers, allowing them to gain a fixed percentage of profits.
+            </p>
+            <img src="./images/rate.svg" alt="Rate">
+            <ul class="follow__money">
+              <li>
+                <h3>$ 96,208,290</h3>
+                <span>Ecosystem Reserve</span>
+              </li>
+              <li>
+                <h3>$ 96,208,290</h3>
+                <span>Ecosystem Reserve</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <section class="power">
+      <h3>Experience the Power of Trading with OKVX</h3>
+      <a class="rv-btn" href="#">
+        <span class="rv-btn__text-wrap">
+          <span class="rv-btn__text-box">
+            <span>Sign Up Now!</span>
+          </span>
+          <span class="rv-btn__text-box">
+            <span>Sign Up Now!</span>
+          </span>
+        </span>
+      </a>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__nav">
+      <a href="#">
+        <img src="./images/logo-footer.svg" alt="Logo">
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            OKVX Protocol
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Governance
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Docs
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Security
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            FAQ
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__social">
+        <ul>
+          <li>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.6342 23.9955C9.33316 23.9955 7.08381 23.2918 5.17058 21.9735C3.25735 20.6552 1.76617 18.7814 0.885605 16.5891C0.00504095 14.3968 -0.225355 11.9844 0.223553 9.65711C0.67246 7.32977 1.78051 5.19198 3.40758 3.51406C5.03465 1.83615 7.10766 0.693475 9.36447 0.230539C11.6213 -0.232397 13.9605 0.00519848 16.0864 0.91328C18.2123 1.82136 20.0293 3.35914 21.3077 5.33216C22.586 7.30518 23.2684 9.62482 23.2684 11.9978C23.2651 15.1789 22.0382 18.2288 19.857 20.4782C17.6757 22.7277 14.7182 23.9929 11.6335 23.9963L11.6342 23.9955ZM5.20655 17.349C6.47848 18.191 7.95838 18.638 9.46982 18.6368C10.5779 18.6634 11.6782 18.4391 12.6931 17.9798C13.708 17.5204 14.6129 16.8371 15.344 15.978C16.6418 14.4561 17.3654 12.5034 17.3825 10.4768C17.3825 10.3373 17.3826 10.2165 17.3738 10.1055C17.9191 9.70026 18.3894 9.19727 18.7622 8.6205C18.2544 8.85243 17.7158 9.00462 17.1644 9.072C17.7432 8.71391 18.1759 8.1509 18.3818 7.488C17.8364 7.82175 17.2393 8.058 16.6167 8.184C16.1975 7.72481 15.6433 7.42083 15.0397 7.31908C14.4362 7.21732 13.8169 7.32346 13.2777 7.62108C12.7385 7.91869 12.3094 8.39121 12.0568 8.96555C11.8041 9.5399 11.742 10.1841 11.88 10.7985C10.7745 10.7393 9.69331 10.4417 8.7062 9.92493C7.7191 9.4082 6.84799 8.68382 6.1491 7.7985C5.79342 8.42992 5.68449 9.17738 5.84447 9.88872C6.00445 10.6 6.42131 11.2218 7.01019 11.6273C6.56825 11.6125 6.13613 11.4891 5.74982 11.2673V11.3033C5.75073 11.9657 5.97307 12.6076 6.37938 13.1208C6.78569 13.6339 7.35112 13.9869 7.98037 14.1203C7.57118 14.2359 7.14166 14.2528 6.7251 14.1698C6.90254 14.7397 7.24841 15.2381 7.71425 15.5951C8.1801 15.9522 8.74258 16.1501 9.32291 16.161C8.15709 17.1027 6.67694 17.5296 5.20655 17.3483V17.349Z"
+                  fill="#A5A8B6"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.7083 6.12038C20.7028 4.27382 19.2447 2.7319 17.48 1.64888C15.7175 0.555579 13.6966 -0.014866 11.64 0.000380703C9.58614 -0.0168693 7.56723 0.552381 5.79486 1.64888C4.02801 2.7309 2.56806 4.27294 1.56141 6.12038C0.522318 7.99799 -0.0161715 10.1258 0.000681807 12.2876C-0.0263479 14.8778 0.750938 17.4089 2.21886 19.5109C3.619 21.586 5.62968 23.1412 7.95341 23.9464C8.05576 23.9796 8.16437 23.9867 8.26998 23.9673C8.37559 23.9478 8.47508 23.9023 8.55995 23.8346C8.62416 23.774 8.67493 23.6998 8.70881 23.6171C8.7427 23.5344 8.7589 23.4451 8.75632 23.3554L8.74832 22.4914C8.7425 21.9469 8.74032 21.4736 8.74032 21.0716L8.39268 21.1399C8.11486 21.1871 7.83268 21.2059 7.55195 21.1969C7.19823 21.1901 6.8457 21.1525 6.49814 21.0844C6.12733 21.0121 5.77914 20.8479 5.48359 20.6059C5.17027 20.3545 4.93803 20.0112 4.81741 19.6211L4.66614 19.2536C4.53936 18.9628 4.37944 18.6887 4.18977 18.4369C4.02097 18.1822 3.79457 17.9737 3.53014 17.8294L3.42468 17.7491C3.35195 17.6936 3.2865 17.6291 3.22832 17.5571C3.17232 17.4896 3.1265 17.4146 3.09232 17.3329C3.06177 17.2579 3.08723 17.1964 3.16795 17.1484C3.30759 17.0891 3.45814 17.0651 3.60723 17.0764L3.9105 17.1244C4.18177 17.2009 4.43632 17.3314 4.66105 17.5084C4.96141 17.7244 5.21232 18.0086 5.39559 18.3401C5.59559 18.7399 5.88432 19.0826 6.23632 19.3399C6.52723 19.5566 6.87268 19.6759 7.22832 19.6834C7.51777 19.6879 7.80723 19.6609 8.09232 19.6031C8.32723 19.5529 8.55559 19.4719 8.77305 19.3631C8.82176 18.7402 9.08487 18.1558 9.51486 17.7154C8.99123 17.6614 8.47268 17.5654 7.96286 17.4274C7.46419 17.2826 6.98543 17.0729 6.53814 16.8034C6.06689 16.5321 5.65218 16.1677 5.31777 15.7309C4.95714 15.2256 4.68809 14.6572 4.52359 14.0531C4.30508 13.2745 4.20017 12.4666 4.21232 11.6561C4.18533 10.4391 4.61435 9.25824 5.41014 8.35913C5.03787 7.29774 5.07563 6.12936 5.51559 5.09588C5.96068 5.02013 6.41741 5.09588 6.81886 5.31188C7.2545 5.48288 7.67704 5.68913 8.08286 5.92763C8.3505 6.09788 8.56505 6.24263 8.7265 6.35963C10.6305 5.80463 12.6407 5.80463 14.5447 6.35963L15.12 5.97563C15.5621 5.69513 16.029 5.45963 16.5141 5.27213C16.8933 5.07709 17.3239 5.0152 17.7403 5.09588C18.1915 6.126 18.2353 7.29696 17.8625 8.35988C18.658 9.25915 19.0867 10.44 19.0596 11.6569C19.0714 12.4708 18.9665 13.2821 18.7483 14.0644C18.5854 14.6734 18.312 15.2426 17.9461 15.7429C17.6063 16.1748 17.1899 16.5362 16.7192 16.8079C16.2705 17.0779 15.7927 17.2879 15.2945 17.4319C14.7854 17.5699 14.2661 17.6666 13.7418 17.7214C14.024 18.0161 14.2407 18.3739 14.3767 18.7669C14.5127 19.1606 14.5658 19.5814 14.5294 19.9984V23.3741C14.5275 23.4633 14.5434 23.5519 14.5761 23.6344C14.6087 23.717 14.6574 23.7918 14.7192 23.8541C14.8027 23.9215 14.9008 23.9668 15.0052 23.9861C15.1095 24.0055 15.2168 23.9983 15.3178 23.9651C17.6413 23.1599 19.6518 21.6047 21.0516 19.5296C22.5224 17.4224 23.2993 14.8845 23.2683 12.2884C23.2836 10.1216 22.7447 7.99013 21.7083 6.12038Z"
+                  fill="#A5A8B6"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.6341 23.9954C9.3174 24.0023 7.05206 23.2916 5.13157 21.9554C2.60835 20.1978 0.851519 17.4925 0.236297 14.4172C-0.0787657 12.8215 -0.0787657 11.1768 0.236297 9.58115C0.539282 8.04695 1.13212 6.58924 1.98102 5.29115C3.246 3.36166 5.02691 1.85234 7.10757 0.946402C7.81104 0.638371 8.54237 0.402972 9.29084 0.243652C10.8376 -0.0812173 12.4321 -0.0812173 13.9788 0.243652C15.4666 0.55624 16.8802 1.16787 18.1388 2.04365C20.0086 3.34575 21.472 5.17902 22.3519 7.3214C22.6508 8.04965 22.8792 8.80715 23.0327 9.58265C23.3476 11.1779 23.3476 12.8227 23.0327 14.4187C22.7297 15.9529 22.1368 17.4106 21.2879 18.7087C20.0254 20.6371 18.2477 22.1465 16.1701 23.0542C14.735 23.6799 13.1922 23.9995 11.6341 23.9954ZM8.75411 4.38065C7.29126 4.36417 5.83727 4.61661 4.4603 5.12615L4.31702 5.19365C4.31302 5.19564 4.3099 5.19912 4.3083 5.2034L4.25084 5.3534C3.07884 9.16353 2.67832 13.1813 3.07412 17.1577L3.0923 17.3324L3.22757 17.4404C4.98651 18.7613 7.03545 19.6122 9.19121 19.9169L9.39484 19.9432H9.41375C9.44322 19.9429 9.47194 19.9335 9.49609 19.9161C9.52025 19.8987 9.53871 19.8741 9.54902 19.8457L10.5759 17.0152C10.5836 16.9942 10.5865 16.9717 10.5845 16.9494C10.5826 16.9271 10.5757 16.9056 10.5645 16.8864C10.5533 16.8672 10.5381 16.8509 10.5199 16.8386C10.5017 16.8264 10.4811 16.8185 10.4596 16.8157L10.1447 16.7639C9.49094 16.6596 8.85139 16.4764 8.23921 16.2179C7.48034 15.8995 6.78076 15.4478 6.17157 14.8829C6.16641 14.8781 6.16276 14.8718 6.16107 14.8649C6.15939 14.8579 6.15975 14.8506 6.16211 14.8439C6.16454 14.8373 6.16879 14.8316 6.17436 14.8274C6.17992 14.8233 6.18654 14.8209 6.19339 14.8207H6.20648C6.31557 14.8627 6.43921 14.9107 6.55557 14.9587C6.81811 15.0719 7.08721 15.1694 7.36139 15.2512C8.75557 15.5954 10.1839 15.7709 11.6181 15.7732V15.7537V15.7807C13.0507 15.7779 14.478 15.6027 15.8712 15.2587C16.1454 15.1769 16.4145 15.0787 16.6778 14.9662C16.7941 14.9189 16.9105 14.8702 17.0268 14.8282H17.0392C17.0461 14.8283 17.0527 14.8306 17.0583 14.8348C17.0639 14.8389 17.0681 14.8447 17.0705 14.8514C17.0728 14.8581 17.0732 14.8654 17.0715 14.8724C17.0698 14.8793 17.0662 14.8856 17.061 14.8904C16.453 15.4539 15.7546 15.9041 14.997 16.2209C14.3839 16.4782 13.7439 16.6612 13.0894 16.7654L12.7745 16.8157C12.7531 16.8187 12.7326 16.8266 12.7146 16.8388C12.6966 16.8511 12.6814 16.8673 12.6703 16.8864C12.6591 16.9054 12.6522 16.9268 12.6501 16.949C12.648 16.9711 12.6508 16.9935 12.6581 17.0144L13.685 19.8517C13.6953 19.88 13.7136 19.9045 13.7377 19.9219C13.7617 19.9393 13.7902 19.9488 13.8196 19.9492H13.8443L14.0487 19.9229C16.2035 19.6163 18.2512 18.7639 20.0087 17.4419L20.1432 17.3339L20.1621 17.1584C20.5581 13.1821 20.1578 9.16433 18.9861 5.35415L18.9294 5.20415C18.9285 5.20197 18.9272 5.19998 18.9256 5.19831C18.924 5.19663 18.9221 5.19531 18.9199 5.1944L18.7767 5.1269C17.3997 4.61736 15.9457 4.36492 14.4828 4.3814H12.8334C12.8304 4.38131 12.8273 4.38204 12.8247 4.38352C12.822 4.385 12.8197 4.38717 12.8181 4.38982C12.8165 4.39247 12.8156 4.39551 12.8155 4.39863C12.8153 4.40176 12.816 4.40487 12.8174 4.40765C12.8193 4.41137 12.8224 4.41428 12.8261 4.4159L16.2152 6.0959C16.2186 6.09766 16.2213 6.10054 16.2229 6.10408C16.2245 6.10762 16.2248 6.11161 16.2239 6.1154C16.2233 6.11939 16.2214 6.12304 16.2185 6.12576C16.2156 6.12849 16.2118 6.13012 16.2079 6.1304C13.2086 5.30838 10.0531 5.30838 7.05375 6.1304C7.04984 6.13012 7.04613 6.12849 7.04323 6.12576C7.04032 6.12304 7.0384 6.11939 7.03775 6.1154C7.03709 6.11164 7.03766 6.10775 7.03937 6.10436C7.04108 6.10096 7.04384 6.09825 7.04721 6.09665L10.5454 4.4159C10.5489 4.41414 10.5517 4.41124 10.5534 4.40765C10.5553 4.40396 10.5558 4.3997 10.5548 4.39565C10.5541 4.39141 10.552 4.38757 10.5488 4.38482C10.5456 4.38207 10.5416 4.38059 10.5374 4.38065H8.75484H8.75411ZM15.1585 13.0679C14.8132 13.0676 14.4737 12.9773 14.1714 12.8054C13.869 12.6335 13.6137 12.3856 13.4292 12.0848C13.2446 11.7839 13.1367 11.4398 13.1156 11.0845C13.0945 10.7291 13.1607 10.374 13.3083 10.0522C13.5119 9.6119 13.8559 9.25715 14.2828 9.04715C14.4996 8.9399 14.733 8.87465 14.9723 8.85215C15.0341 8.85215 15.0967 8.84465 15.1599 8.84465C15.6936 8.85932 16.2007 9.08827 16.5732 9.48275C16.9457 9.87723 17.1541 10.4061 17.1541 10.9567C17.1541 11.5072 16.9457 12.0361 16.5732 12.4306C16.2007 12.825 15.6936 13.054 15.1599 13.0687H15.1585V13.0679ZM8.07848 13.0679C7.73325 13.0676 7.3937 12.9773 7.09137 12.8054C6.78904 12.6335 6.53373 12.3856 6.34915 12.0848C6.16457 11.7839 6.05671 11.4398 6.03558 11.0845C6.01445 10.7291 6.08074 10.374 6.2283 10.0522C6.43193 9.6119 6.77593 9.25715 7.20284 9.04715C7.41957 8.9399 7.65375 8.87465 7.8923 8.85215C7.95411 8.85215 8.01739 8.84465 8.07993 8.84465C8.42553 8.84424 8.76561 8.93399 9.06854 9.10556C9.37146 9.27712 9.62737 9.52493 9.81245 9.8259C9.99754 10.1269 10.1058 10.4713 10.1271 10.827C10.1485 11.1827 10.0822 11.5382 9.93448 11.8604C9.73041 12.3006 9.38618 12.6553 8.95921 12.8654C8.68447 13.0006 8.38288 13.0698 8.07848 13.0679Z"
+                  fill="#A5A8B6"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 23.9954C9.23079 23.9973 6.54631 23.0407 4.40236 21.288C2.25842 19.5354 0.787178 17.0947 0.238469 14.3804C-0.191838 12.2543 -0.0377727 10.0513 0.684275 8.00572C1.40632 5.96017 2.66935 4.1486 4.33899 2.76372C6.00864 1.37884 8.02246 0.47244 10.1662 0.140947C12.31 -0.190546 14.5035 0.0652635 16.5135 0.881164C18.711 1.77529 20.5943 3.30061 21.9255 5.26447C23.2567 7.22834 23.976 9.54264 23.9926 11.9151C24.0092 14.2875 23.3224 16.6117 22.0188 18.594C20.7153 20.5763 18.8535 22.1278 16.6687 23.0527C15.1919 23.6785 13.6039 23.9997 12 23.9969V23.9954ZM11.4382 15.7627L14.6767 18.1372C14.7916 18.2226 14.931 18.2686 15.0742 18.2684C15.2294 18.2682 15.3798 18.2148 15.5003 18.117C15.6208 18.0193 15.7042 17.8832 15.7365 17.7314L17.8762 7.48716C17.9096 7.32865 17.8819 7.16338 17.7988 7.02436C17.7157 6.88533 17.5832 6.78278 17.4277 6.73716H17.397C17.2652 6.70314 17.1261 6.71154 16.9995 6.76116L4.46172 11.6384C4.37213 11.6728 4.29562 11.7345 4.24302 11.8148C4.19042 11.895 4.1644 11.9898 4.16862 12.0857C4.17285 12.1816 4.20713 12.2737 4.26659 12.349C4.32605 12.4243 4.4077 12.479 4.49997 12.5054L7.68222 13.4519L8.88222 17.2282C8.90719 17.3087 8.95064 17.3824 9.00911 17.4432C9.06757 17.504 9.13944 17.5503 9.21897 17.5784L9.25797 17.5904H9.40197C9.47969 17.5914 9.55663 17.5747 9.62697 17.5417C9.68837 17.514 9.74388 17.4748 9.79047 17.4262L11.4382 15.7454V15.7627Z"
+                  fill="#A5A8B6"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>© Copyright 2023. All Rights Reserved.</p>
+      </div>
+      <div class="footer__items">
+        <ul>
+          <li>
+            <a href="#">
+              Bug Bounty
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Flash Loans
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Rate Switching
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              Branding
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              Technical Paper
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Aavenomics
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Terms & conditions
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Cookies Policy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/index.js" type="module"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+<script>
+  VANTA.HALO({
+    el: "#canva",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00
+  })
+</script>
+</body>
 </html>
