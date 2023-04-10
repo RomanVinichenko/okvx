@@ -1,4 +1,14 @@
 let scrollpos = window.scrollY
+let point = document.querySelector(".cycle-tab-item")
+const body = document.body
+
+window.addEventListener('load', function () {
+  point.classList.add("active")
+  setTimeout(function () {
+    body.style.opacity = "1"
+  }, 300);
+
+})
 
 const header = document.querySelector(".header");
 
