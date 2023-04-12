@@ -50,3 +50,18 @@ $(function () {
     tabCycle = setInterval(tabChange, 5000);
   });
 });
+
+const burger = document.querySelector('.menu__burger');
+const menuMob = document.querySelector('.menu__mob');
+burger.addEventListener('click', function () {
+  menuMob.classList.toggle('menu__mob--active');
+  burger.classList.toggle('menu__burger--active');
+});
+
+const linkin = document.querySelectorAll('.linkin');
+linkin.forEach(function (removingTel) {
+  removingTel.addEventListener('click', function () {
+    menuMob.classList.remove('menu__mob--active');
+    burger.classList.remove('burger--active');
+  });
+});

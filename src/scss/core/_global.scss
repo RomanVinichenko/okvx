@@ -174,6 +174,16 @@ h3 {
 }
 
 .more {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media($md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
   .container {
     position: relative;
 
@@ -188,39 +198,33 @@ h3 {
       background: linear-gradient(93.86deg, #FD15FF 0%, #10DBFF 100%);
       opacity: 0.5;
       filter: blur(175px);
+      @include media($sm) {
+        display: none;
+      }
     }
   }
 
   &__box {
-    padding: 96px 0 100px;
+    padding: 30px 0 90px;
     background-color: rgba(26, 34, 61, 0.5);
     border-radius: 12px;
     position: relative;
-    background-image: url("/src/images/more.svg");
-    background-position: top right 8%;
-    background-repeat: no-repeat;
+
     @include media($xl) {
-      padding: 70px 0;
+      padding: 30px 0 70px;
     }
     @include media($lg) {
-      padding: 60px 0;
-      background-position: top right;
+      padding: 30px 0 70px;
     }
     @include media($md) {
       padding: 32px 0;
-      background-image: none;
     }
   }
 
-  &__img {
-    display: none;
+  &__pic {
+    margin-left: 40px;
     @include media($md) {
-      display: block;
-      max-width: 80%;
       margin: 24px auto 0;
-    }
-    @include media($md) {
-      max-width: 100%;
     }
   }
 
@@ -237,15 +241,6 @@ h3 {
       font-size: 14px;
       line-height: 1.5;
       margin-bottom: 24px;
-    }
-  }
-
-  &__info {
-    @include media($lg) {
-      max-width: 48%;
-    }
-    @include media($md) {
-      max-width: 100%;
     }
   }
 }
@@ -278,6 +273,9 @@ section {
     background: linear-gradient(93.86deg, #FD15FF 0%, #10DBFF 100%);
     opacity: 0.5;
     filter: blur(175px);
+    @include media($sm) {
+      display: none;
+    }
   }
 
   &::before {
@@ -291,6 +289,9 @@ section {
     background: linear-gradient(93.86deg, #FD15FF 0%, #10DBFF 100%);
     opacity: 0.5;
     filter: blur(175px);
+    @include media($sm) {
+      display: none;
+    }
   }
 
 
@@ -434,7 +435,6 @@ section {
 }
 
 .markets {
-
   .container {
     position: relative;
 
@@ -449,6 +449,9 @@ section {
       background: linear-gradient(93.86deg, #FD15FF 0%, #10DBFF 100%);
       opacity: 0.5;
       filter: blur(175px);
+      @include media($sm) {
+        display: none;
+      }
     }
   }
 
@@ -587,6 +590,10 @@ section {
       }
     }
   }
+}
+
+main {
+  overflow: hidden;
 }
 
 .whole {
@@ -855,6 +862,109 @@ section {
 
   &--active {
     background-color: rgba(#000, 0.7);
+  }
+
+  .menu {
+    li {
+      &:not(:last-child) {
+        @include media($lg) {
+          margin-right: 30px;
+        }
+        @include media(890px) {
+          margin-right: 20px;
+        }
+        @include media(810px) {
+          margin-bottom: 24px;
+          margin-right: 0;
+        }
+      }
+
+      a {
+        @include media(810px) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .menu__mob {
+    @include media(810px) {
+      transition: all 0.3s;
+      position: absolute;
+      width: 100%;
+      transform: translateX(-200%);
+      height: 120vh;
+      background-color: rgba(#000, 0.9);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20vh;
+    }
+  }
+
+  .menu__mob--active {
+    transform: none;
+  }
+
+  .rv-btn {
+    z-index: 10;
+    @include media(810px) {
+      margin-left: auto;
+    }
+  }
+
+  .logo {
+    z-index: 10;
+  }
+
+  .menu__burger {
+    width: 24px;
+    z-index: 10;
+    height: 24px;
+    background-color: transparent;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    display: none;
+    border: none;
+    margin-left: 20px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      transition: all 0.3s;
+
+      &:first-of-type {
+        opacity: 1;
+      }
+
+      &:last-of-type {
+        opacity: 0;
+      }
+    }
+
+    @include media(810px) {
+      display: block;
+    }
+  }
+
+  .menu__burger--active {
+    img {
+      &:first-of-type {
+        opacity: 0;
+      }
+
+      &:last-of-type {
+        opacity: 1;
+      }
+    }
   }
 }
 
