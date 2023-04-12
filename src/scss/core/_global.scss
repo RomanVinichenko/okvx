@@ -1102,6 +1102,20 @@ main {
       @include media($md) {
         margin-bottom: 12px;
       }
+      @include media(600px) {
+        width: 50%;
+      }
+
+      &:not(:last-child) {
+        @include media(600px) {
+          margin-right: 0;
+        }
+      }
+
+    }
+
+    @include media(600px) {
+      width: 100%;
     }
 
     @include media($md) {
